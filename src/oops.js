@@ -32,12 +32,12 @@ program
     files.map(function(file) {
       exec('git add ' + file, function(error, stdout, stderr) {
         if (error) console.log(error);
-        if (stderr) console.log(error);
+        if (stderr) console.log(stderr);
       });
     });
     exec('git commit --amend -C HEAD', function(error, stdout, stderr) {
       if (error) console.log(error);
-      if (stderr) console.log(error);
+      if (stderr) console.log(stderr);
     });
   });
 
