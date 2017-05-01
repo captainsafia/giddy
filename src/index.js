@@ -40,12 +40,12 @@ program
       if (fs.existsSync(__dirname + file)) {
         exec('git add ' + file, function(error, stdout, stderr) {
           if (error) console.log(error);
-          if (stderr) console.log(std.err);
+          if (stderr) console.log(stderr);
         });
       } else {
         exec('git rm ' + file, function(error, stdout, stderr) {
           if (error) console.log(error);
-          if (stderr) console.log(std.err);
+          if (stderr) console.log(stderr);
         });
       }
     });
