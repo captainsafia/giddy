@@ -1,0 +1,21 @@
+{
+  "name": "giddy",
+  "version": "1.0.0",
+  "description": "A CLI wrapper around git for an improved developer experience",
+  "main": "src/index.js",
+  "bin": {
+    "giddy": "src/index.js",
+    "giddy-oops": "src/oops.js"
+  },
+  "keywords": [
+    "developer experience",
+    "CLI",
+    "git"
+  ],
+  "author": "Safia Abdalla <safia@safia.rocks>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {}
+}
