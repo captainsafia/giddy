@@ -23,7 +23,7 @@ order to more transparently communicate what they do, `giddy stage <file>` runs
 either `git rm <file>` or `git add <file>` for a given file depending on whether
 or not it has been removed from the project. 
 
-`giddy undo <files>` undoes unstaged changes to a file but checking out the
+`giddy undo <files>` undoes unstaged changes to a file by checking out the
 version of the file associated with the most recent commit. `git undo --all`
 undoes unstaged changes to all files in the project.
 
