@@ -32,7 +32,7 @@ Sometimes it's helpful to browse through changes in a project commit
 by commit. giddy provides a few simple commands for traversing the
 revision history for a particular project.
 
-`giddy back` goes backwards one command in the revision history. For example,
+`giddy back` goes backwards one commit in the revision history. For example,
 in order to go back three commits into the project, a user can input the following
 commands.
 
