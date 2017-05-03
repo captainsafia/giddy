@@ -7,7 +7,8 @@ const fs = require('fs');
 const __version__ = require('../package.json').version;
 
 program
-  .version(__version__);
+  .version(__version__)
+  .usage('<command> [<files>]')
 
 program
   .command('no-git')
@@ -52,3 +53,8 @@ program
   });
 
 program.parse(process.argv);
+
+// Output the usage information, if giddy-oops is invoked without providing a command
+if (!process.argv.slice(2).length) {
+  program.outputHelp();
+}
