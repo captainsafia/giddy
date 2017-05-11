@@ -38,7 +38,7 @@ program
   .arguments('<files...>')
   .action(function(files) {
     files.map(function(file) {
-      if (fs.existsSync(__dirname + file)) {
+      if (fs.existsSync(process.cwd() + '/' + file)) {
         exec('git add ' + file, function(error, stdout, stderr) {
           if (error) console.log(error);
           if (stderr) console.log(stderr);
