@@ -46,7 +46,7 @@ program
   .command('undo')
   .description('Undo the last commit')
   .action(function() {
-    exec('giddy reset HEAD~1', function(error, stdout, stderr) {
+    exec('git reset HEAD~1', function(error, stdout, stderr) {
       if (error) console.log(error);
       if (stderr) console.log(stderr);
     });
